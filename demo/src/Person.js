@@ -5,8 +5,9 @@ export default function(props) {
   let person = getPerson(props.match.params.id)
   return (
     <div>
-      {person.name}
-      {person.description}
+      <h1>{person.name}</h1>
+      <p>{person.description}</p>
+      <img src={person.image} />
     </div>
   )
 }
